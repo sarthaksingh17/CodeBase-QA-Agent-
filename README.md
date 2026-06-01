@@ -509,5 +509,5 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 <p align="center">
-  Built with ❤️ by <a href="https://github.com/sarthaksingh17">Sarthak Singh</a>
+  Built by  <a href="https://github.com/sarthaksingh17">Sarthak Singh</a>
 </p>
