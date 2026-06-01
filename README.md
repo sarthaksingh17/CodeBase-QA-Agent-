@@ -8,10 +8,10 @@
 
 <h1 align="center">🔍 CodeBase QA Agent</h1>
 
+
 <p align="center">
   <strong>Ask natural language questions about any GitHub codebase and get accurate, source-cited answers.</strong>
 </p>
-
 <p align="center">
   An advanced RAG (Retrieval-Augmented Generation) pipeline that combines <br/>
   Tree-sitter AST parsing, hybrid vector search, cross-encoder reranking, and LLM generation <br/>
@@ -19,6 +19,9 @@
 </p>
 
 ---
+Live demo - https://code-baseagent.streamlit.app/
+---
+
 
 ## 📋 Table of Contents
 
