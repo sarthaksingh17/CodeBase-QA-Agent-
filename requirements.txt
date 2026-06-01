@@ -1,0 +1,14 @@
+gitpython
+tree-sitter
+tree-sitter-python
+tree-sitter-javascript
+tree-sitter-typescript
+tree-sitter-java
+tree-sitter-go
+qdrant-client[fastembed]
+sentence-transformers
+groq
+streamlit
+ragas
+datasets
+python-dotenv
