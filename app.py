@@ -198,20 +198,8 @@ with st.sidebar:
 
     st.markdown("---")
 
-    # Settings
-    st.markdown("### ⚙️ Search Settings")
-    top_k_search = st.slider(
-        "Retrieval Top-K",
-        min_value=5, max_value=50, value=20,
-        help="Number of candidates fetched from vector search"
-    )
-    top_k_rerank = st.slider(
-        "Rerank Top-K",
-        min_value=3, max_value=10, value=5,
-        help="Number of best chunks after reranking"
-    )
-
-    st.markdown("---")
+    top_k_search = 15
+    top_k_rerank = 5
 
     # Danger zone
     with st.expander("🗑️ Delete Collection"):
