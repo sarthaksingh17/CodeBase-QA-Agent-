@@ -3,19 +3,16 @@ Router: Orchestration layer connecting retrieval, generation, and ingestion.
 Streamlit app calls this module — no FastAPI needed.
 """
 
-import os
-from dotenv import load_dotenv
 from qdrant_client import QdrantClient
 from retriever import retrieve
 from generator import generate
 from ingest import ingest_repo as _ingest_repo, get_repo_name
-
-load_dotenv()
+from config import QDRANT_URL, QDRANT_API_KEY
 
 # ── Qdrant connection (for collection management) ──────────────
 client = QdrantClient(
-    url=os.getenv("QDRANT_URL"),
-    api_key=os.getenv("QDRANT_API_KEY"),
+    url=QDRANT_URL,
+    api_key=QDRANT_API_KEY,
 )
 
 

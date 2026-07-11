@@ -6,7 +6,6 @@ Uses all-MiniLM-L6-v2 (384-dim dense) + BM25 (sparse) for hybrid search.
 import os
 import uuid
 import git
-from dotenv import load_dotenv
 from qdrant_client import QdrantClient
 from qdrant_client.models import (
     VectorParams, Distance, SparseVectorParams,
@@ -14,13 +13,12 @@ from qdrant_client.models import (
 )
 from chunker import chunk_repo
 from embeddings import embed_dense, embed_sparse, DENSE_DIM
-
-load_dotenv()
+from config import QDRANT_URL, QDRANT_API_KEY
 
 # ── Qdrant connection ───────────────────────────────────────────
 client = QdrantClient(
-    url=os.getenv("QDRANT_URL"),
-    api_key=os.getenv("QDRANT_API_KEY"),
+    url=QDRANT_URL,
+    api_key=QDRANT_API_KEY,
 )
 
 # ── Your GitHub repos ───────────────────────────────────────────

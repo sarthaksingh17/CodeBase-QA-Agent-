@@ -3,18 +3,15 @@ Retriever: Hybrid search (dense + sparse + RRF fusion) + CrossEncoder reranking.
 Stages 7, 8, 9 of the pipeline.
 """
 
-import os
-from dotenv import load_dotenv
 from qdrant_client import QdrantClient, models
 from qdrant_client.models import SparseVector
 from embeddings import embed_dense, embed_sparse, get_reranker
-
-load_dotenv()
+from config import QDRANT_URL, QDRANT_API_KEY
 
 # ── Qdrant connection ───────────────────────────────────────────
 client = QdrantClient(
-    url=os.getenv("QDRANT_URL"),
-    api_key=os.getenv("QDRANT_API_KEY"),
+    url=QDRANT_URL,
+    api_key=QDRANT_API_KEY,
 )
 
 

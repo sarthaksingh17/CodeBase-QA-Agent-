@@ -5,11 +5,9 @@ Stages 10 and 11 of the pipeline.
 
 import os
 from groq import Groq
-from dotenv import load_dotenv
+from config import GROQ_API_KEY
 
-load_dotenv()
-
-groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+groq_client = Groq(api_key=GROQ_API_KEY)
 
 # ── System prompt for code-aware QA ────────────────────────────
 SYSTEM_PROMPT = """You are a senior software engineer analyzing a codebase.
