@@ -19,7 +19,7 @@
 </p>
 
 ---
-Live demo - https://code-baseagent.streamlit.app/
+Live demo - [https://code-baseagent.streamlit.app/](https://repository-analyzer.streamlit.app/)
 ---
 
 
